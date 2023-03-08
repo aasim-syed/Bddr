@@ -1,11 +1,8 @@
 # $Bddr$ .
 
 
-![Text Repetition Scroll Effect](https://tympanus.net/codrops/wp-content/uploads/2022/04/TextRep_feat.jpg)
 
-[Article on Codrops](https://tympanus.net/codrops/?p=63187)
 
-[Demo]()
 
 
 ## Installation
