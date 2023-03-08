@@ -6,11 +6,11 @@
     <title>Still brewing...⌛</title>
     <meta name="description" content="An on-scroll animation that shows repeated fragments of a big text as seen on the website of Dr. Dabber.">
     <meta name="keywords" content="on-scroll, animation, typography, text, duplication, repetition, css">
-    <meta name="author" content="aasim">
+    <meta name="author" content="Codrops">
     <link rel="shortcut icon" href="/favicon.824cf0c5.ico">
     <link rel="stylesheet" href="https://use.typekit.net/fxx5dng.css">
     <link rel="stylesheet" type="text/css" href="/index.d046a61c.css">
-    <script src="/index.c0b1fca5.js"></script><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="/index2.d3d50733.js"></script><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>document.documentElement.className = "js";
 var supportsCssVars = function() {
     var e, t = document.createElement("style");
@@ -21,7 +21,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 </script>
     <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
   </head>
-  <body class="demo-2 loading">
+  <body class="demo-3 loading">
     <main data-scroll-container="">
       <div class="frame">
         <h1 class="frame__title content__title content__title--size-vvs">
@@ -41,65 +41,62 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
         </nav>
       </div>
       <div class="content">
-        <h2 class="content__title content__title--size-l" data-text-rep="">
-          BDDR
-        </h2>
-        <p>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-        </p>
+        <p>Worlds first multi template Platform.</p>
         <h2 class="content__title content__title--size-s" data-text-rep="">
-          BDDR
+          $BDDR$
+        </h2>
+        <p>Connect link with 🔗 MetaMask wallet or any UPI</p>
+        <h2 class="content__title content__title--size-s" data-text-rep="">
+          STILL
         </h2>
         <p>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-        </p>
-        <h2 class="content__title content__title--size-l" data-text-rep="">
-          BDDR
-        </h2>
-        <p>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
+			Worlds first multi template Platform.
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
         </p>
         <h2 class="content__title content__title--size-m content__title--left" data-text-rep="">
-          BDDR
+          BREWING...
         </h2>
         <h2 class="content__title content__title--size-m content__title--right" data-text-rep="">
-          BDDR
+          ⌛
         </h2>
-        <p>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-        </p>
+        <p>Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+		</p>
         <h2 class="content__title content__title--size-xl" data-text-rep="">
-          BDDR
+          Soul
         </h2>
         <p>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-          Adding $ome bull$hit sentence to bring out the animation effects.<br>lol<br>
-        </p>
-        <p class="footer">
-          From
-          <a class="hover-line" href=""></a>
-          
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			Worlds first multi template Platform
+			
         </p>
         <p>
-          <a class="hover-line" href="/index3.html">Dont like it?skip it🗿</a>
+          <a class="hover-line" href="/index4.html">Another Style Y'ALLLL!!!</a>
         </p>
       </div>
     </main>
     <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
-    <script src="/index2.99b78296.js" defer=""></script>
+    <script src="/index3.588a7487.js" defer=""></script>
   </body>
 </html>
