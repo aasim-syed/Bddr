@@ -1,0 +1,319 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  --color-text: #fff;
+  --color-bg: #000;
+  --color-link: #fff;
+  --color-link-hover: #fff;
+  --font-size-vvvs: .2vw;
+  --font-size-vvs: .05px;
+  --font-size-vs: 1vw;
+  --font-size-s: 8vw;
+  --font-size-m: 10vw;
+  --font-size-l: 24vw;
+  --font-size-xl: 26vw;
+  --font-family: widescreen-ex, sans-serif;
+  --font-weight: 900;
+  --content-offset: 20vh;
+  --font-case: uppercase;
+  --color-rep-text: var(--color-text);
+  --color-rep-text-main: var(--color-text);
+  --color-rep-outline: var(--color-text);
+  --color-rep-bg: var(--color-bg);
+  --font-factor: .059;
+  --font-line: .745;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+  margin: 0;
+  font-family: halyard-micro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.demo-2 {
+  --color-bg: #8d8e98;
+  --content-offset: 10vh;
+  --font-family: widescreen-mixed, sans-serif;
+  --font-size-l: 20vw;
+  --font-size-xl: 24vw;
+}
+
+.demo-3 {
+  --color-bg: #525fdc;
+  --content-offset: 10vh;
+  --color-rep-bg: transparent;
+}
+
+.demo-4 {
+  --color-bg: #1f1d1c;
+  --color-text: #d14521;
+  --color-rep-text: #d14521;
+  --content-offset: 10vh;
+  --font-family: bely-display, serif;
+  --font-weight: 400;
+  --font-factor: .059;
+  --font-line: .745;
+  --font-case: lowercase;
+  --color-rep-bg: transparent;
+  --font-size-xl: 34vw;
+}
+
+#message-history {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+
+#message-history th, #message-history td {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.demo-5 {
+  --color-bg: #c5c3c7;
+  --color-text: #b61e1e;
+  --color-link: #000;
+  --content-offset: 10vh;
+  --color-rep-bg: transparent;
+}
+
+.js .loading:before, .js .loading:after {
+  content: "";
+  z-index: 1000;
+  position: fixed;
+}
+
+.js .loading:before {
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg);
+  top: 0;
+  left: 0;
+}
+
+.js .loading:after {
+  width: 60px;
+  height: 60px;
+  opacity: .4;
+  background: var(--color-link);
+  border-radius: 50%;
+  margin: -30px 0 0 -30px;
+  animation: .7s linear infinite alternate forwards loaderAnim;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes loaderAnim {
+  to {
+    opacity: 1;
+    transform: scale3d(.5, .5, 1);
+  }
+}
+
+a {
+  color: var(--color-link);
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  outline: none;
+}
+
+a:focus {
+  background: #d3d3d3;
+  outline: none;
+}
+
+a:focus:not(:focus-visible) {
+  background: none;
+}
+
+a:focus-visible {
+  background: none;
+  outline: 2px solid red;
+}
+
+.unbutton {
+  font: inherit;
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.unbutton:focus {
+  outline: none;
+}
+
+main {
+  padding: 1.5rem 2rem 0;
+}
+
+.frame {
+  text-align: center;
+}
+
+.frame__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.frame__links {
+  margin: .5rem 0 2rem;
+}
+
+.frame__links a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.hover-line, .cda-sponsor-link {
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-line:before, .cda-sponsor-link:before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  transform-origin: 0%;
+  background: currentColor;
+  transition: transform .3s;
+  position: absolute;
+  top: 92%;
+}
+
+.hover-line:hover:before, .cda-sponsor-link:hover:before {
+  transform-origin: 100%;
+  transform: scaleX(0);
+}
+
+.content {
+  margin: var(--content-offset) 0 0 0;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.content p {
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  max-width: 500px;
+  margin: 10vh auto;
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+p.footer {
+  opacity: .5;
+  padding-top: 25vh;
+  font-size: 1rem;
+}
+
+.content__title--size-s {
+  --size: var(--font-size-s);
+}
+
+.content__title--size-m {
+  --size: var(--font-size-m);
+}
+
+.content__title--size-l {
+  --size: var(--font-size-l);
+}
+
+.content__title--size-xl {
+  --size: var(--font-size-xl);
+}
+
+.content__title {
+  font-size: var(--size);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  text-transform: var(--font-case);
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  margin: 0;
+  display: grid;
+}
+
+.content__title--left {
+  margin-right: auto;
+}
+
+.content__title--right {
+  margin-left: auto;
+}
+
+.text-rep span {
+  color: var(--color-rep-text-main);
+  background: var(--color-rep-bg);
+  line-height: var(--font-line);
+  padding-bottom: calc(var(--font-factor) * var(--size));
+  will-change: transform;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.text-rep span:not(:last-child) {
+  color: var(--color-rep-text);
+  background-color: #000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.demo-2 .text-rep span, .demo-3 .text-rep span:not(:last-child) {
+  -webkit-text-stroke: 1px var(--color-rep-outline);
+  text-stroke: 1px var(--color-rep-outline);
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: #0000;
+  background-color: #000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.demo-3 .text-rep span, .demo-4 .text-rep span, .demo-5 .text-rep span {
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 53em) {
+  .frame {
+    grid-column-gap: 3vw;
+    grid-row-gap: 1rem;
+    text-align: left;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "title demos demos sponsor"
+                         "links links links links";
+    justify-content: space-between;
+    display: grid;
+  }
+
+  .frame__title {
+    grid-area: title;
+  }
+
+  .frame__links {
+    grid-area: links;
+    margin: 0;
+  }
+
+  .frame__links--demos {
+    grid-area: demos;
+  }
+}
+
+/*# sourceMappingURL=index.d046a61c.css.map */

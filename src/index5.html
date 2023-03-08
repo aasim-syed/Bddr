@@ -32,8 +32,116 @@
 				</nav>
 			</div>
 			<div class="content">
-				<p>Closer observation discloses a far-reaching alteration of the entire character. She is now serious, dignified; when she speaks her subject is always an extremely serious one. In this condition she can talk so seriously, forcibly and convincingly, that one is tempted to ask oneself if this is really a girl of fifteen and a half. One has the impression of a mature woman possessed of considerable dramatic talent. The reason for this seriousness, this solemnity of behaviour, is given in her explanation that at these times she stands at the frontier of this world and the other, and associates just as truly with the spirits of the dead as with living people. </p>
-				<h2 class="content__title content__title--size-l" data-text-rep>ozra</h2>
+				
+				
+				<h2 class="content__title content__title--size-s" data-text-rep>BLOCKNOMICS!</h2>
+				<div class ="content__title content__title--size-l"  id="message" data-text-rep></div>
+				<h2 class="content__title content__title--size-l"  id="message" data-text-rep></h2>
+				<div id="top-three-places"></div>
+			<form id="message-form">
+			  <label for="message-text">Enter your message:</label><br />
+			  <input type="text" id="message-text" name="message-text" required /><br />
+			  <label for="message-price">Enter your bid:</label><br />
+			  <input
+				type="number"
+				id="message-price"
+				name="message-price"
+				required
+			  /><br />
+			  <input type="submit" value="Submit" />
+			</form>
+		
+			<div id="error-message"></div>
+		
+			<table id="message-history">
+			  <thead>
+				<tr>
+				  <th>Message</th>
+				  <th>Bid Price</th>
+				</tr>
+			  </thead>
+			  <tbody></tbody>
+			</table>
+		
+			<script>
+			  let messages = [];
+			  let currentPrice = 0;
+			  let currentMessage = "";
+		
+			  const messageForm = document.getElementById("message-form");
+			  const messageText = document.getElementById("message-text");
+			  const messagePrice = document.getElementById("message-price");
+			  const messageDisplay = document.getElementById("message");
+			  const stylzed = document.getElementsByClassName("content__title content__title--size-s")
+			  const messageHistory = document
+				.getElementById("message-history")
+				.getElementsByTagName("tbody")[0];
+			  const errorMessage = document.getElementById("error-message");
+			  const topThree = document.getElementById("top-three-places");
+			  messageForm.addEventListener("submit", function (event) {
+				event.preventDefault();
+		
+				const price = parseInt(messagePrice.value);
+				const text = messageText.value;
+		
+				if (price > currentPrice) {
+					currentPrice = price;
+					currentMessage = text;
+					messageDisplay.innerText = currentMessage;
+					stylzed.innerText = currentMessage
+				  }
+		
+				if (price !== NaN) {
+				  //currentPrice = price;
+				  //currentMessage = text;
+				  //messageDisplay.innerText = currentMessage;
+		
+				  if (text.trim() === "" || price.toString().trim() === "") {
+					errorMessage.innerText = "Please enter a message and bid price.";
+					errorMessage.style.display = "block";
+					return;
+				  }
+		
+				  if (price !== NaN) {
+					currentPrice = price;
+					currentMessage = text;
+		
+					messages.push({
+					  text: text,
+					  price: price,
+					});
+		
+					messageHistory.innerHTML = "";
+		
+					for (let i = 0; i < messages.length; i++) {
+					  if (
+						messages[i].text.trim() !== "" &&
+						messages[i].price.toString().trim() !== ""
+					  ) {
+						const row = messageHistory.insertRow(0);
+						const textCell = row.insertCell(0);
+						const priceCell = row.insertCell(1);
+						textCell.innerText = messages[i].text;
+						priceCell.innerText = messages[i].price;
+					  }
+					}
+				  }
+		
+				  console.log(messages);
+		
+		
+				  for (let j = 0; j < messages.length; j++) {
+					messages.sort();
+					currentMessage = messages[messages.length - 1].text;
+					
+				  }
+		
+				  messageText.value = "";
+				  messagePrice.value = "";
+				  errorMessage.style.display = "none";
+				}
+			  });
+			</script>
 				<p>The continuity of consciousness which the patient presents in the individual attacks recalls the behaviour of the consciousness in MacNish's case; hence our case may be regarded as a transient phenomenon of alternating consciousness. The dreamlike hallucinatory content of the limited consciousness in our case does not, however, justify an unqualified assignment to this group of double consciousness. </p>
 				<h2 class="content__title content__title--size-s" data-text-rep>horizont</h2>
 				<p>The hallucinations in the second state show a certain creativeness which seems to be conditioned by the auto-suggestibility of this state. In Mesnet's case we noticed the appearance of hallucinatory processes from simple stimulation of touch. The patient's subconsciousness employs simple perceptions for the automatic construction of complicated scenes which then take possession of the limited consciousness. A somewhat similar view must be taken about our patient's hallucinations; at least, the external conditions which gave rise to the appearance of the hallucinations seem to strengthen our supposition.</p>
@@ -47,6 +155,8 @@
 					<a class="hover-line" href="index.html" class="current">Demo 1</a>
 				</p>
 			</div>
+				
+			
 		</main>
 		<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
 		<script type="module" src="js/demo5/index.js"></script>
