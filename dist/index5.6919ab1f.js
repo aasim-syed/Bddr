@@ -685,6 +685,6 @@ class RepeatTextScrollFx {
     }
 }
 
-},{"../utils":"72Dku","gsap":"fPSuC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["bKqcQ","g3xxq"], "g3xxq", "parcelRequire7cb3")
+},{"../utils":"72Dku","gsap":"fPSuC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["bKqcQ","g3xxq"], "g3xxq", "parcelRequire5398")
 
 //# sourceMappingURL=index5.6919ab1f.js.map
